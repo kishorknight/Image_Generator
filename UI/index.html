@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text-to-Image Generation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="main-container">
+    <div><h1>Text-to-Image Generator</h1></div>
+    
+
+    <!-- Model Selection Buttons -->
+    <div id="model-selection">
+      <button onclick="selectModel('stable-diffusion-v1-4')" class="model-button">Stable Diffusion v1.4</button>
+      <button onclick="selectModel('stable-diffusion-2-1')" class="model-button">Stable Diffusion 2.1</button>
+      <button onclick="selectModel('dreamlike-diffusion-1.0')" class="model-button">Dreamlike Diffusion 1.0</button>
+      <button onclick="selectModel('stable-diffusion-xl-base-1.0')" class="model-button">Stable Diffusion XL Base 1.0</button>
+      <button onclick="selectModel('dreamlike-anime-1.0')" class="model-button">Dreamlike Anime 1.0</button>
+    </div>
+
+    <!-- Prompt Input -->
+    
+      <input type="text" id="prompt" placeholder="Enter the prompt...." class="input-box">
+    
+
+    <!-- Generate Button -->
+    <button id="generate">Generate</button>
+
+
+    <!-- Display Generated Image -->
+    <div id="image-container">
+      <img id="generated-image" src="" alt="Generated Image">
+      <!-- Loading Spinner -->
+      <div id="loading-spinner" class="loading-spinner" style="display: none;">
+        <div class="spinner"></div>
+        <p>Generating image, please wait...</p>
+      </div>
+    </div>
+
+    <!-- Download Button -->
+    <button id="download" onclick="downloadImage()" style="display: none;">Download Image</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

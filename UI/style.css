@@ -1,0 +1,191 @@
+/* styles.css */
+/* Centering the entire container */
+body,
+html {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* Centering elements inside main-container */
+#main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  /* Space between elements */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #1e1e1e;
+  /* max-width: 600px; */
+  width: 80%;
+  /* Responsive width */
+  text-align: center;
+  height: 100%;
+}
+
+.input-box {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #4CAF50;
+  border-radius: 5px;
+  background-color: #333;
+  color: #f5f5f5;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.model-selection {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.model-selection button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.image-display {
+  width: 100%;
+  height: 500px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-display img {
+  max-width: 100%;
+  max-height: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Model button styles */
+.model-button {
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #333;
+  color: #f5f5f5;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.model-button:hover {
+  background-color: #4CAF50;
+}
+
+/* Input and Generate Button styles */
+#prompt {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+#generate,
+#download {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+#generate:hover {
+  background-color: #45a049;
+}
+
+#download:hover {
+  background-color: #45a049;
+}
+
+
+
+
+
+
+/* Loading Spinner Styles */
+#image-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#generated-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#loading-spinner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  /* Light background to highlight the spinner */
+  z-index: 10;
+  backdrop-filter: blur(5px);
+  /* Blur effect */
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 15px;
+  /* Space between spinner and message */
+}
+
+#loading-spinner p {
+  font-size: 1rem;
+  color: #333;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
