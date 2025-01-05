@@ -11,8 +11,6 @@
   <img src="https://github.com/user-attachments/assets/bc04e840-2efb-4867-94ea-45c6f42d0998" width="45%" />
 </p>
 
-### Single Image
-
 <p align="center">
   <img src="https://github.com/user-attachments/assets/95fa8e4a-fce6-40e7-97e2-c8c163c4857c" width="90%" />
 </p>
